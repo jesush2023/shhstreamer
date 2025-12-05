@@ -50,13 +50,13 @@ I'm plannig to do streams coding while I learn and start a YT Channel soon!  so,
 # Getting Started
 
 ### Requirements.
-    - ~~NASA PC~~ 
-    - Install VB-CABLE (you'll need it for further config.) [Haven't Tested yet.]
+    -~~NASA PC~~ 
+    -Install VB-CABLE (you'll need it for further config.) [Haven't Tested yet.]
         Link: https://vb-audio.com/Cable/
-    - `pip install SpeechRecognition`
-    - `pip install PyAudio`
-    - `pip install pyttsx3`
-    - `pip install eel`
+    -`pip install SpeechRecognition`
+    -`pip install PyAudio`
+    -`pip install pyttsx3`
+    -`pip install eel`
 ### Setting up (Virtual Cable)
     -After installation Restart your PC.
     -On windows (sry linux, someday.) go to your sound settings -> App volume and preferences (located a the bottom)
