@@ -1,13 +1,13 @@
 window.onload = async function() {
     let datos = await eel.get_lists()(); 
     
-    llenarSelect("micSelect", datos.mics);
-    llenarSelect("voiceSelect", datos.voices);
+    fillSelect("micSelect", datos.mics);
+    fillSelect("voiceSelect", datos.voices);
     
     js_log("--- Loaded Devices ---");
 };
 
-function llenarSelect(elementId, listaItems) {
+function fillSelect(elementId, listaItems) {
     let select = document.getElementById(elementId);
     select.innerHTML = ""; 
     
