@@ -48,27 +48,30 @@ def select_mic():
             "Controlador primario" not in name):
             
             seen_core_names.add(clean_name)
-            info_devices.append((i, name))
+            info_devices.append({"id": i, "name": name})
             
     p.terminate()
+    return info_devices
     
-    print("\n--- [ Select Your Microphone ] ---")
-    for index_list, (real_id, name) in enumerate(info_devices):
-        print(f"[{index_list}] {name}")
+    # Legacy, CMD UI
+    
+    #print("\n--- [ Select Your Microphone ] ---")
+    #for index_list, (real_id, name) in enumerate(info_devices):
+    #    print(f"[{index_list}] {name}")
         
-    while True:
-        try:
-            option = int(input("\nSelect your microphone: "))
-            if 0 <= option < len(info_devices):
-                real_id = info_devices[option][0]
-                real_name = info_devices[option][1]
-                print(f"-> Selected: {real_name} (ID: {real_id})")
-                time.sleep(1)
-                return real_id
+    #while True:
+    #    try:
+    #        option = int(input("\nSelect your microphone: "))
+    #        if 0 <= option < len(info_devices):
+    #            real_id = info_devices[option][0]
+    #            real_name = info_devices[option][1]
+    #            print(f"-> Selected: {real_name} (ID: {real_id})")
+    #            time.sleep(1)
+    #            return real_id
                 
-            print("Invalid Selection, Try again.")
-        except ValueError:
-            print("Please, enter a number.")
+    #        print("Invalid Selection, Try again.")
+    #    except ValueError:
+    #        print("Please, enter a number.")
 
 def hear_function(mic_id, lang_code):
 
@@ -83,7 +86,7 @@ def hear_function(mic_id, lang_code):
         
         with sr.Microphone(device_index=mic_id) as source:
             print("Calibrating background noise (silence please)...")
-            r.adjust_for_ambient_noise(source, duration=2)
+            r.adjust_for_ambient_noise(source, duration=0.5)
             
             print(f"Calibration Done. Speak Now... ({r.pause_threshold}s allowed pause time.)")
             

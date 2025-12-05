@@ -1,11 +1,24 @@
 import pyttsx3
-import utils
+#import utils
 
 def select_voice():
-    utils.cleaning()
+    #utils.cleaning()
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
     
+    voice_options = []
+    
+    for i, v in enumerate(voices):
+        voice_options.append({
+            "id": i,
+            "name": v.name
+        })
+        
+    return voice_options
+    
+    #Legacy. CMD UI
+    
+    """
     print("\n----- [ Available Voices ] -----")
     for i, v in enumerate(voices):
         print(f"[{i}], {v.name}")
@@ -20,6 +33,7 @@ def select_voice():
     except:
         pass
     return 0
+    """
 
 def speak(text, voice_index=0):
     if not text: return

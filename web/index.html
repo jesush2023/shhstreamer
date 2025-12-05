@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ShyStreamer AI</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎙️ ShyStreamer</h1>
+        
+            <div class="panel">
+                <div class="control">
+                    <label>Microphone</label>
+                    <select id="micSelect" onchange="setConfig('mic', this.value)">
+                        <option value="0">Loading...</option>
+                    </select>
+                </div>
+            <div class="control">
+                    <label>Language</label>
+                    <select id="langSelect" onchange="setConfig('lang', this.value)">
+                        <option value="es-419">Español (LatAm)</option>
+                        <option value="es-ES">Español (España)</option>
+                        <option value="en-US">English (USA)</option>
+                        <option value="ja-JP">Japanese (Japan)</option> </select>
+                </div>
+            <div class="control">
+                    <label>Bot Voice</label>
+                    <select id="voiceSelect" onchange="setConfig('voice', this.value)">
+                        <option value="0">Loading...</option>
+                    </select>
+                </div>
+        </div>
+
+        <div id="console" class="console">
+            <p style="color: #888">--- System Ready ---</p>
+        </div>
+        <div class="button-group">
+            <button id="btnStart" onclick="start()">START STREAMING</button>
+            <button id="btnStop" onclick="stop()" disabled class="btn-stop">STOP STREAM</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
