@@ -35,13 +35,13 @@ I'm plannig to do streams coding while I learn and start a YT Channel soon!  so,
 
 # Getting Started
 
-### Requirements. (Need testing)
+### Requirements. 
 - ~~NASA PC~~ 
 - Have Edge or Chrome installed
 - Install VB-CABLE (you'll need it for further config.)
     Link: https://vb-audio.com/Cable/
 - Download Release on Releases extract it and Go setting up VC
-### Setting up (Virtual Cable)
+### Setting up (Virtual Cable) (Need testing)
 - After installation Restart your PC.
 - On windows (sry linux, someday.) go to your sound settings -> App volume and preferences (located a the bottom)
 - find 'python.exe' (or 'main_eel.exe') in the list.

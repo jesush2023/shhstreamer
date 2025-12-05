@@ -6,7 +6,7 @@ window.onload = async function() {
     if (datos) {
 
         fillSelect("micSelect", datos.mics);
-        fillSelect("voiceSelec", datos.voices);
+        fillSelect("voiceSelect", datos.voices);
 
         if (datos.config) {
             let volReal = datos.config.volume;
