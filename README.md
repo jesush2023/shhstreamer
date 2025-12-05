@@ -50,22 +50,22 @@ I'm plannig to do streams coding while I learn and start a YT Channel soon!  so,
 # Getting Started
 
 ### Requirements.
--~~NASA PC~~ 
--Install VB-CABLE (you'll need it for further config.) [Haven't Tested yet.]
+0.~~NASA PC~~ 
+1.Install VB-CABLE (you'll need it for further config.) [Haven't Tested yet.]
     Link: https://vb-audio.com/Cable/
--`pip install SpeechRecognition`
--`pip install PyAudio`
--`pip install pyttsx3`
--`pip install eel`
+2.`pip install SpeechRecognition`
+3.`pip install PyAudio`
+4.`pip install pyttsx3`
+5.`pip install eel`
 ### Setting up (Virtual Cable)
--After installation Restart your PC.
--On windows (sry linux, someday.) go to your sound settings -> App volume and preferences (located a the bottom)
--find 'python.exe' (or 'main_eel.exe' [If I compiled this. sry I'm lazy.]) in the list.
--Change the **Ouput** device from "Default" to **"CABLE Input (VB-Audio Virtual Cable)"**.
+1.After installation Restart your PC.
+2.On windows (sry linux, someday.) go to your sound settings -> App volume and preferences (located a the bottom)
+3.find 'python.exe' (or 'main_eel.exe' [If I compiled this. sry I'm lazy.]) in the list.
+4.Change the **Ouput** device from "Default" to **"CABLE Input (VB-Audio Virtual Cable)"**.
 
 ### Setting up OBS / Discord Configuration
--**In OBS:** Add a new source for "Audio Output Capture" and select **"CABLE Input"** (This captures the audio the bot is sending).
--**In Discord:** In Voice & Video settings, change the input device to **"CABLE Output"** (The cable's output device acts as the bot's microphone).
+1.**In OBS:** Add a new source for "Audio Output Capture" and select **"CABLE Input"** (This captures the audio the bot is sending).
+2.**In Discord:** In Voice & Video settings, change the input device to **"CABLE Output"** (The cable's output device acts as the bot's microphone).
 
 ### Setting up This.
 - after installed dependencies do:
