@@ -25,6 +25,7 @@ window.onload = async function() {
             document.getElementById("micSelect").value = data.config.mic;
             document.getElementById("voiceSelect").value = data.config.voice;
             document.getElementById("langSelect").value = data.config.lang;
+            document.getElementById("hotkeyInput").value = data.config.hotkey || "f9"
             
             let volReal = data.config.volume;
 
@@ -92,6 +93,32 @@ function updateVolume(val) {
 function updateSens(val) {
     document.getElementById('sensLabel').innerText = val + "%";
     eel.update_config('sensitivity', val); 
+}
+
+async function setHotkey(){
+    let val = document.getElementById("hotkeyInput").value;
+    let success = await eel.update_hotkey(val)();
+
+    if (success) {
+        js_log("[SUCCESS] Hotkey changed to: "+ val);
+    } else {
+        js_log(" [ERROR] Invalid key.");
+    }
+}
+
+eel.expose(js_trigger_start);
+function js_trigger_start(){
+    document.getElementById('btnStart').disabled = true;
+    document.getElementById('btnStart').innerText = "WORKING...";
+    document.getElementById('btnStop').disabled = false;
+    document.getElementById('btnStop').innerText = "STOP STREAM";
+    js_log(">>> START HOTKEY USED");
+}
+
+eel.expose(js_trigger_stop);
+function js_trigger_stop(){
+    stop();
+    js_log(">>> STOP HOTKEY USED");
 }
 
 eel.expose(js_log);

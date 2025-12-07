@@ -7,6 +7,7 @@ import asyncio
 import utils
 import json
 import os
+import keyboard
 
 eel.init('web')
 
@@ -34,7 +35,8 @@ default_config = {
     "lang": "es-419",
     "voice": 0,
     "volume": 50,
-    "sensitivity": 20
+    "sensitivity": 20,
+    "hotkey": "f9"
 }
 
 saved_config = load_config()
@@ -47,6 +49,41 @@ else:
     print("--- [SYS] Defatult configuration selected. ---")
 
 active_stream = False
+
+def toggle_stream():
+    global active_stream
+    if active_stream:
+        print("--- [HOTKEY] Stopping stream... ---")
+        stop_stream()
+        eel.js_trigger_stop()
+    else:
+        print("--- [HOTKEY] Startig stream... ")
+        start_stream()
+        eel.js_trigger_start()
+
+@eel.expose
+def update_hotkey(hotkey_str):
+    print(f"[HOTKEY] Setting Global Hotkey to: {hotkey_str}")
+    
+    keyboard.unhook_all_hotkeys()
+    
+    try:
+        keyboard.add_hotkey(hotkey_str, toggle_stream)
+        
+        app_config["hotkey"] = hotkey_str
+        save_config()
+        return True
+    except Exception as e:
+        print(f"Error setting hotkey: {e}")
+        return False
+    
+current_hotkey = app_config.get("hotkey", "f9")
+try:
+    keyboard.add_hotkey(current_hotkey, toggle_stream)
+    print(f"--- [SYS] Initial Hotkey loaded as: {current_hotkey}")
+except:
+    print(" --- [WARN] Can't load the initial hotkey ---")
+
 
 @eel.expose
 def stop_stream():

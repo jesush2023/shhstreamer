@@ -42,6 +42,13 @@
                 <input type="range" id="sensInput" min="0" max="100" value="20" 
                     oninput="updateSens(this.value)">
             </div>
+            <div class="control">
+                <label>Global Hotkey (Start/Stop)</label>
+                <div style="display: flex; gap: 5px;">
+                    <input type="text" id="hotkeyInput" value="f9" placeholder="ej: ctrl+alt+s">
+                    <button onclick="setHotkey()" style="width: auto; padding: 0 10px;">SET</button>
+                </div>
+            </div>
         </div>
 
         <div id="console" class="console">
