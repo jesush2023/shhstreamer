@@ -31,6 +31,8 @@ and yeah, I'm still learning code, I had a lot of fun testing and making this, I
 
 I'm plannig to do streams coding while I learn and start a YT Channel soon!  so, stay tuned for more!
 
+I'm doing the development of this app on my <a href="https://www.twitch.tv/imistch">twitch channel!</a>
+
 (◞‸◟；) I'm still a newbie.
 
 # Getting Started
@@ -77,4 +79,5 @@ By using this software, you agree to the following:
 - edge-tts==7.2.3
 - pygame==2.6.1
 - pyinstaller==6.17.0
+- keyboard==0.13.5
 
