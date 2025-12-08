@@ -74,3 +74,5 @@ dist/
 *.log
 
 app.ico
+
+web/app.ico
