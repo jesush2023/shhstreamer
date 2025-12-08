@@ -36,3 +36,7 @@ I made a lot of shit. I need an Icon for this. [DONE]
 ### I want better vocies.
 
 - Look for better voices on google or reddit or whatev.
+
+### Add a slider for speak velocity
+
+- this. [Pending]
