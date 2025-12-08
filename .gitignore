@@ -74,6 +74,8 @@ ShhStreamer.spec
 *.json
 *.log
 
+TODO.md
+
 app.ico
 
 web/app.ico
